@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: darkblue;
+    height: 10vh;
+}
+
+menu {
+    grid-area: menu;
+    background-color: lightgray;
+    height: 85vh;
+}
+
+.mainGrid {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        'nav nav'
+        'menu section'
+        'footer footer'
+    ;
+    grid-template-columns: 1fr 6fr;
+}
+
+
+section {
+    grid-area: section;
+    background-color: gray;
+    height: 85vh;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_item {
+    flex-grow: 1;
+    width: 33%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    
+    
+}
+
+.grid-img{
+    display: flex;
+    height: 70%;
+    width: 90%;
+    object-fit: fill;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkgray;
+    height: 5vh;
+}
+
+
